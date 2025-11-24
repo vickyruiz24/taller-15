@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 15.1.2 - Versión Alternativa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-secondary custom-header">
+        <div class="container-fluid text-white">
+
+            <a class="navbar-brand text-white fw-semibold" href="#">LOREM IPSUM</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+
+                <ul class="navbar-nav order-2 order-lg-1 mx-lg-auto gap-lg-5 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light opacity-75" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light opacity-75" href="#">Amet</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link text-light" id="mobileOptionsBtn" href="#">Opciones</a>
+                    </li>
+                </ul>
+
+                <form class="order-1 order-lg-2 d-flex">
+                    <input class="form-control form-control-sm" type="search" placeholder="Search">
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITLE + CAROUSEL -->
+    <section class="container text-center mt-5">
+        <h1 class="fw-bold">Lorem ipsum...</h1>
+
+        <div id="rotatingText" class="position-relative overflow-hidden mt-2">
+            <p class="changing-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <!-- BODY LAYOUT -->
+    <section class="container mt-5">
+        <div class="row">
+
+            <!-- OPCIONES (solo en desktop) -->
+            <div class="col-lg-3 d-none d-lg-flex flex-column gap-2" id="sidebarOptions">
+                <button class="btn btn-outline-secondary text-start py-3">Opción 1</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 2</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 3</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 4</button>
+            </div>
+
+            <!-- MOBILE OPTIONS (toggle) -->
+            <div class="col-12 d-lg-none d-none flex-column gap-2 mt-3" id="mobileSidebar">
+                <button class="btn btn-outline-secondary text-start py-3">Opción 1</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 2</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 3</button>
+                <button class="btn btn-outline-secondary text-start py-3">Opción 4</button>
+            </div>
+
+            <!-- MAIN TEXT -->
+            <div class="col-lg-9 mt-lg-0 mt-4">
+
+                <!-- FILA 1 -->
+                <div class="row g-3 bg-light p-3">
+                    <div class="col-12 col-md-6 col-lg-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
+                    <div class="col-12 col-md-6 col-lg-4"><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p></div>
+                    <div class="col-12 col-md-6 col-lg-4"><p>Excepteur sint occaecat cupidatat non proident...</p></div>
+                </div>
+
+                <!-- FILA 2 -->
+                <div class="row g-3 bg-light p-3 mt-3">
+                    <div class="col-12 col-md-6 col-lg-4"><p>Sed ut perspiciatis unde omnis iste natus error...</p></div>
+                    <div class="col-12 col-md-6 col-lg-4"><p>Nemo enim ipsam voluptatem quia voluptas...</p></div>
+                    <div class="col-12 col-md-6 col-lg-4"><p>Neque porro quisquam est qui dolorem ipsum...</p></div>
+                </div>
+
+                <!-- FILA 3 -->
+                <div class="row g-3 mt-3">
+                    <div class="col-12 col-md-6 col-lg-4 bg-light p-3">
+                        <p>At vero eos et accusamus et iusto odio dignissimos...</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 bg-light p-3">
+                        <p>Et harum quidem rerum facilis est et expedita...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
